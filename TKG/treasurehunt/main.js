@@ -18,6 +18,8 @@ let w4 = Number(0);
 let w999 = Number(0);
 let buyNumberNow = Number(0);
 
+let allOpenFlg = 0;
+
 // 初期処理
 function init() {
   // くじ描画領域の初期値保存
@@ -209,6 +211,7 @@ document.querySelector('.buyButton').addEventListener('click', function(event) {
   updateBuyCount(buyNumber);
   // くじ描画
   setLotteryImg();
+  allOpenFlg = 0;
 });
 
 // 購入処理
@@ -226,7 +229,11 @@ document.querySelector('.resetButton').addEventListener('click', function(event)
 
 // 全部めくるボタンを押した時の処理
 document.querySelector('.allOpenButton').addEventListener('click', function(event) {
+  if (allOpenFlg === 1) {
+    return event;
+  }
   imgAllOpen();
+  allOpenFlg = 1;
 });
 
 // くじ選択処理

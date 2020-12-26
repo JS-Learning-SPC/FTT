@@ -8,13 +8,10 @@
 </head>
 	<div class="nav"><a href="../../index.html">TOP</a> | <a href="../index.html">前ページ</a></div>
 <body>
-	<div style="margin-left:30%;margin-right:30%;">
- 		<input id="cutin_button" type="button" style="width:100%;padding:0px;font-size:30px;" value="カットイン" />
- </div>
- 	<a style="color:red;margin-left:30%;margin-right:30%;font-size: 20px">※音が出ます周辺にご注意してください※</a>
-	<a style="font-size: 20px;">カットイン回数：</a>
-	<a id="count" style="font-size: 45px; color: red;"></a>
- 	<video id="cutin_place"/ style="width:100%">
+	<input class="cutin_button" id="cutin_button" type="button" value="カットイン" />
+ 	<a class="message">※音が出ます。周辺に注意してボタンを押してください※</a>
+	<a class="count" id="count"></a>
+ 	<video class="cutin_place" id="cutin_place">
  	<script src="./cutin.js"></script>
 </body>
 </html>

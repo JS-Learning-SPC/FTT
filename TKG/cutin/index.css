@@ -21,3 +21,51 @@
   color: white;
   text-decoration:none;
 }
+
+.cutin_button {
+	position: absolute;
+	width: 50%;
+	top: 0.5%;
+	left: 25%;
+	font-size:30px;
+	display: inline-block;
+	padding: 0.5em 1em;
+	text-decoration: none;
+	background: #FFF;
+	color: #000;
+	border-bottom: solid 3px #000;
+	border-radius: 7px;
+	font-weight: bold;
+}
+
+.cutin_button:active {
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  border-bottom: none;
+}
+
+.message {
+	position: absolute;
+	width: 70%;
+	text-align: center;
+	top: 10%;
+	left: 15%;
+	color:red;
+	font-size: 20px;
+}
+
+.count {
+	position: absolute;
+	text-align: center;
+	width: auto;
+	top: 3%;
+	left: 90%;
+ 	font-size: 45px;
+ 	color: red;
+}
+
+.cutin_place {
+	position: absolute;
+	width: 100%;
+	top: 15%;
+}

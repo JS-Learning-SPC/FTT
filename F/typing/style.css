@@ -72,3 +72,28 @@ body{
         transform:translateX(-40px);
     }
 }
+
+.nav{
+	display: block;
+	position: fixed;
+	left: 0;
+	top: 0;
+	background: #fff;
+	width: 240px;
+	height: 25px;
+	z-index: 12000;
+	min-height: 0;
+	font-weight: normal;
+	color: #8cbad1;
+	padding: 0 0 1px 0;
+	font-size: 18px;
+	text-align: center;
+}
+
+.nav a{
+	display:inline-block;
+	padding:0 5px;
+  color: #d18c98;
+  text-decoration:none;
+  font-family: 'M PLUS 1p', sans-serif;
+}

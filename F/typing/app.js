@@ -112,7 +112,7 @@ document.addEventListener('keydown', function(event) {
 			move(2);
 			types.shift(); //0番目の要素を削除
 			if (types.length === 0) {
-				//alert('よくできました');
+				alert('やったね♪');
 				timerEnd();
 			}
 		}else{

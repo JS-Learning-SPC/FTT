@@ -5,6 +5,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Script-Type" content="text/javascript" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
 <title>じゃばすくりぷと学習の間</title>
 <meta name="keywords" content="ページのキーワード1,2,3" />
 <meta name="description" content="ページの説明" />
@@ -17,20 +18,39 @@
 	<div id="outer">
 		<div id="header">
 			<h1>TKDの間</h1>
+				<div class ="swiper-container">
+					<div class="swiper-wrapper">
+   						<div class="swiper-slide"><li><img src="img/top1.jpg" alt="" class="top_img1"></li></div>
+    					<div class="swiper-slide"><li><img src="img/top2.jpg" alt="" class="top_img2"></li></div>
+					    <div class="swiper-slide"><li><img src="img/top3.jpg" alt="" class="top_img3"></li></div>
+					    <div class="swiper-slide"><li><img src="img/top4.jpg" alt="" class="top_img4"></li></div>
+					    <div class="swiper-slide"><li><img src="img/top5.jpg" alt="" class="top_img5"></li></div>
+					    <div class="swiper-slide"><li><img src="img/top6.jpg" alt="" class="top_img6"></li></div>
+					</div>
+				    <div class="swiper-pagination"></div>
+				</div>
 		</div>
-
 		<div id="main">
-			<div class="content">
-				<a href="">ページ名</a>
-				<p>コメント欄</p>
+			<div class="menu">
+  				<li class="has-sub">
+    				<a href="">お世話</a>
+					<ul class="sub">
+			    		<li><a href="">ごはん</a></li>
+      					<li><a href="">おそうじ</a></li>
+    				</ul>
+  				</li>
 			</div>
+		<div class="anji_base"><li><img src="img/anji_base.gif" alt="" class="anji_base"></li></div>
 		</div>
-
+		<a>まだなにも動きません～</a>
 		<div id="footer">
 			<div class="copy">
 			</div>
 		</div>
 	</div>
     <script src ="./main.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
+    <script src ="slider.js"></script>
+    <script src ="menu.js"></script>
 </body>
 </html>

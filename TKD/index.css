@@ -5,18 +5,24 @@ padding:0;
 }
 
 #header {
-height:200px;
+height:691px;
 padding:88px 0 0 22px;
 }
 
 #outer {
+position: relative;
 background-color:#fff;
 margin:0px auto;
-width:960px;
+width: 960px;
+height: 1500px;
 font-size:13px;
-line-height:150%;
+line-height: 150%;
 padding:0;
 color:#222;
+}
+
+.swiper-wrapper li img {
+width:915px;
 }
 
 #main {
@@ -24,7 +30,7 @@ float:left;
 background-color:#262626;
 width:960px;
 }
-
+/*
 .content {
 padding:10px 60px 10px 80px;
 font-size:25px;
@@ -35,12 +41,12 @@ color:#fff;
 .content a {
   color: white;
 }
-
+/*
 .content p {
   padding:0px 20px 10px 20px;
   font-size: 12px;
 }
-
+*/
 h1 {
 font-size:48px;
 text-align:left;
@@ -67,6 +73,80 @@ color: #033;
 .nav a{
 	display:inline-block;
 	padding:0 5px;
-  color: white;
-  text-decoration:none;
+ 	color: white;
+ 	text-decoration:none;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+a{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+.menu {
+	display: flex;
+	width: 100px;
+	height: 50px;
+}
+
+.menu > li {
+	position: relative;
+	width: 100px;
+	border-right: 1px solid #fff;
+}
+
+.menu a {
+	display: block;
+	line-height: 1;
+	z-index: 1;
+}
+
+.menu {
+	flex-flow: row wrap;
+}
+
+.menu a {
+	padding: 2px 0;
+	font-size: 16px;
+	color: #fff;
+	text-align: center;
+}
+
+.sub {
+	list-style: none;
+	overflow: hidden;
+	width: 100px;
+	min-height: 0;
+	height: 0;
+	z-index: 1.75;
+	transition: min-height 0.5s;
+}
+
+.sub > li > a {
+	font-size: 16px;
+	color: #fff;
+	line-height: 1.75;
+	background-color: #262626;
+}
+
+.sub > li > a:hoevr {
+	background-color: #262626;
+	opacity: 1;
+}
+
+.sub.active {
+	 min-height: 180px;
+}
+
+.anji_base{	
+	list-style: none;
+	position: absolute;
+	top: 75%;
+	left :40%;
 }

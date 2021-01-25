@@ -1,0 +1,302 @@
+@charset "UTF-8";
+/* ==========================================
+HELPER
+========================================== */
+.clearfix:before,
+.clearfix:after {
+	display: table;
+	content: "";
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.clearfix {
+	zoom: 1;
+}
+/* ==========================================
+SLIDER
+========================================== */
+#slider li img{
+	width: 100%;
+	height: 800px;
+	object-fit: cover;
+}
+
+/* ==========================================
+GENERAL
+========================================== */
+html {
+	overflow-y: scroll;
+}
+
+body {
+	color: #008bb2;
+	font-size: 16px;
+	font-family: Verdana, Arial, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+	line-height: 1.6;
+}
+
+a {
+	outline: none;
+	text-decoration: underline;
+}
+
+a:link {
+	color: #008bb2;
+}
+
+a:visited {
+	color: #008bb2;
+}
+
+a:hover {
+	color: #76c9ff;
+}
+
+a:active {
+	color: #76c9ff;
+}
+
+/* ==========================================
+STRUCTURE
+========================================== */
+.inner {
+	position: relative;
+	margin: 0 auto;
+	width: 980px;
+}
+
+.inner h2 {
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+/* ==========================================
+HEADER
+========================================== */
+#header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	width: 100%;
+	height: 60px;
+	background-color: #008bb2;
+	background-color: rgba(0,139,178,0.8);
+}
+
+h1 {
+	float: left;
+	margin-top: 8px;
+}
+
+/* ==========================================
+GROBAL NAVI
+========================================== */
+#gnav{
+	float: right;
+}
+
+#gnav ul {
+	margin-right: -60px;
+	padding-top: 15px;
+}
+
+#gnav li{
+	float: left;
+	margin-right: 60px;
+}
+
+/* ==========================================
+CONCEPT
+========================================== */
+#concept {
+	background: #fffceb;
+	text-align: center;
+}
+
+#concept .inner {
+	padding: 60px 0;
+}
+
+#concept .concept_image {
+	margin-bottom: 30px;
+}
+
+#concept .concept_text {
+	color: #008bb2;
+	line-height: 2.5;
+}
+
+#concept .caution {
+	opacity: 0.2;
+	font-size: 12px;
+}
+
+/* ==========================================
+MENU
+========================================== */
+#menu {
+
+	background: url(../images/bg_round01.png) no-repeat 50% 0 ;
+}
+
+#menu .inner {
+    height: 600px;
+	padding: 120px 0 60px;
+	margin: auto;
+}
+
+#menu_list {
+	margin-right: -30px;
+
+}
+
+#menu_list li {
+	text-align: center;
+    left: 0;
+    right: 0;
+	margin: auto;
+	margin-bottom: 80px;
+	width: 500px;
+	border-radius: 30px;
+	background: #fff;
+}
+
+#menu_list li div{
+	padding: 20px;
+}
+#wrapper {
+	background-color:  #83c5d8;
+	top:0;
+	height: 100%;
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden; 
+	position: fixed;
+
+}
+
+
+#menu_list li h3 {
+	margin-bottom: 30px;
+	font-size: 25px;
+}
+
+#menu_list li img {
+	margin-bottom: 30px;
+	border-radius: 10px;
+}
+
+
+/* ==========================================
+MOVIE
+========================================== */
+#movie {
+	background: url(../images/bg_round02.png) no-repeat 50% 0 #fffceb;
+}
+
+#movie .inner {
+	padding: 120px 0 60px;
+}
+
+#movie_info ul {
+	margin: 0 auto;
+	width: 60%;
+}
+
+#movie_info li {
+	text-align: center;
+	line-height: 2;
+}
+
+#movie_info .tel {
+	font-size: 32px;
+	font-weight: bold;
+}
+
+
+
+/* ==========================================
+ACCESS
+========================================== */
+#access {
+	background: url(../images/bg_round01.png) no-repeat 50% 0  #83c5d8;
+}
+
+#access .inner {
+	padding: 120px 0 60px;
+}
+
+#information ul {
+	margin: 0 auto;
+	width: 60%;
+}
+
+#information li {
+	text-align: center;
+	line-height: 2;
+}
+
+#information .tel {
+	font-size: 32px;
+	font-weight: bold;
+}
+
+#gmap {
+	width: 100%;
+	height: 600px;
+}
+
+
+/* ==========================================
+FOOTER
+========================================== */
+#footer {
+	padding: 20px 0;
+	background: #008bb2;
+}
+
+#footer p {
+	color: #fff;
+	text-align: center;
+}
+
+/* ==========================================
+SMART PHONE
+========================================== */
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+@media screen and (max-width: 480px) {
+	h1 {
+		float: none;
+		text-align: center;
+	}
+
+	.inner {
+		width: 90%;
+	}
+
+	#gnav {
+		display: none;
+	}
+
+	#slider {
+		padding-top: 60px;
+	}
+
+	#menu_list {
+		margin-right: 0;
+	}
+
+	#menu_list li {
+		float: none;
+		margin: 0 auto 30px;
+		width: 90%;
+	}
+}

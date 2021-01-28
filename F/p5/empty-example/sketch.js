@@ -85,7 +85,7 @@ let sketch3 = function(p) {
 	
     p.setup = function(){
 		  p.millisecond = p.millis();
-		  p.createCanvas(2068 / 4, 2068 / 4, WEBGL);
+		  p.createCanvas(2068 / 4, 2068 / 4, p.WEBGL);
 		  p.pixelDensity(4);
 		  p.background(0);
 		  p.angleMode(p.DEGREES);

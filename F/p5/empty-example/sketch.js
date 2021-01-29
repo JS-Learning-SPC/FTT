@@ -77,7 +77,7 @@ let sketch2 =  function(p) {
 let sketch3 = function(p) {
 	let angle = 0;
 	let sentence = '1234567890!';
-	let fontName = '';
+	//let fontName = '';
 	
 	p.preload = function(){
 		fontName = p.loadFont('assets/Hannari.otf');

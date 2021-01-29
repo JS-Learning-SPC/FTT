@@ -90,8 +90,8 @@ let sketch3 = function(p) {
 		  p.background(0);
 		  p.angleMode(p.DEGREES);
 		  p.textAlign(p.CENTER, p.CENTER);
-		  p.textFont(fontName);
-		  p.textSize(24);
+		  textFont(fontName);
+		  textSize(24);
 		  p.frameRate(12);
     }
     

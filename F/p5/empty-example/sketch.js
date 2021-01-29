@@ -104,7 +104,7 @@ let sketch3 = function(p) {
 			  	p.rotateX(6);
 			  	p.rotateY(3);
 			  	p.rotateZ(p.millis() % 12);
-			  	p.text(p.sentence[j % 12], j, j, j);
+			  	p.text(sentence[j % 12], j, j, j);
 		  	}
 		  p.pop();
 		  p.rotateZ(p.millis());

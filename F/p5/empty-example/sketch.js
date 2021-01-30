@@ -1,25 +1,3 @@
-//function setup() {
-//  createCanvas(1000, 480);
-//  background(0);
-//}
-
-//function draw() {
-  //ellipse(50,50,80,80);
-//  if (mouseIsPressed) {
-  		//fill(0);
-//  		fill('rgba(224,112,95, 1)');
-//  	if (keyIsPressed) {
-//  			fill('rgba(61, 64, 91, 1)');
-//  		}
-//  	} else if (keyIsPressed) {
-//  		fill('rgba(129,178,154, 1)');
-//  	} else {
-//  		fill('rgba(242,204,143, 1)');
-  		//fill(255);
-//  }
-//  ellipse(mouseX, mouseY, 30, 30);
-//}
-
 let sketch1 = function(p) {
       p.setup = function(){
 	      p.createCanvas(600, 300);
@@ -74,7 +52,7 @@ let sketch2 =  function(p) {
 	};
 };
 
-let sketch3 = function(p) {
+let sketch3 = function(p) { //動かん
 	let angle = 0;
 	let sentence = '1234567890!';
 	//let fontName = '';
@@ -111,6 +89,19 @@ let sketch3 = function(p) {
 		
 	}
 };
+
+let sketch4 = function(p) {
+	p.setup = function() {
+		p.createCanvas(600, 300);
+		p.background(150,150,150);
+	}
+	p.touchMoved = function() {
+	    //ドラッグかスワイプで線を描く
+	    p.line(p.mouseX, p.mouseY, p.pmouseX, p.pmouseY);
+	}
+};
+
   new p5(sketch1, "container1");
   new p5(sketch2, "container2");
-  new p5(sketch3, "container3");
+  //new p5(sketch3, "container3");
+  new p5(sketch4, "container4");

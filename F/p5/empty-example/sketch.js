@@ -20,7 +20,18 @@ let sketch1 = function(p) {
    }
 };
 
-let sketch2 =  function(p) {
+let sketch2 = function(p) {
+	p.setup = function() {
+		p.createCanvas(600, 300);
+		p.background(250,250,250);
+	}
+	p.touchMoved = function() {
+	    //ドラッグかスワイプで線を描く
+	    p.line(p.mouseX, p.mouseY, p.pmouseX, p.pmouseY);
+	}
+};
+
+let sketch3 =  function(p) {
     p.setup = function(){
         p.createCanvas(2066 / 4, 2066 / 4);
 		p.pixelDensity(4);
@@ -52,7 +63,7 @@ let sketch2 =  function(p) {
 	};
 };
 
-let sketch3 = function(p) { //動かん
+let sketch4 = function(p) { //動かん
 	let angle = 0;
 	let sentence = '1234567890!';
 	//let fontName = '';
@@ -90,18 +101,8 @@ let sketch3 = function(p) { //動かん
 	}
 };
 
-let sketch4 = function(p) {
-	p.setup = function() {
-		p.createCanvas(600, 300);
-		p.background(150,150,150);
-	}
-	p.touchMoved = function() {
-	    //ドラッグかスワイプで線を描く
-	    p.line(p.mouseX, p.mouseY, p.pmouseX, p.pmouseY);
-	}
-};
 
   new p5(sketch1, "container1");
   new p5(sketch2, "container2");
-  //new p5(sketch3, "container3");
-  new p5(sketch4, "container4");
+  new p5(sketch3, "container3");
+  //new p5(sketch4, "container4");
